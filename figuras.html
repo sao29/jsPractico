@@ -8,8 +8,90 @@
     <title>Figuras geometricas</title>
 </head>
 <body>
+  <header>
     <h1>
         figuras Geometricas
     </h1>
+  </header>
+
+  <section>
+      <h2>Calcula el area y perimetro de un cuadrado</h2>
+      <form action="">
+        <label for="inputCuadrado">
+            Escribe cuanto mide cada lado de tu cuadrado:
+        </label>
+        <input id="inputCuadrado" type="number" />
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular el perimetro
+        </button>
+
+        <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el area
+        </button>
+
+      </form>
+
+      
+</section>
+
+  <!-- Triángulo -->
+  
+  <section>
+    <form action="">
+        <h2>Obtener area y perimetro del tringualo</h2>
+        <br>
+        <label for="inputLado1">
+            Ingrese la medida del lado 1
+            <input type="number" id="inputLado1">
+        </label>
+        <br> 
+        <label for="inputLado2">
+            ingrese el lado 2
+            <input type="number" id="inputLado2">
+        </label>
+        <br>
+        
+        <label for="inputBase">
+            Agregue la medida de la base
+            <input type="number" id="inputBase"> 
+        </label>
+        <br>
+
+        <label for="inputAltura">
+            Agruege la altura del triangulo
+            <input type="number" id="inputAltura">
+        </label>
+        <br>
+
+        <button type="button" onclick="buttonAreaTriangulo()">
+        Obtener el area </button>
+        
+        <button type="button" onclick="buttonPeriTriangulo()">
+        Obtener el perimetro</button>
+        <br>
+    </form>
+    
+
+</section>
+
+
+<section>
+    <form action="">
+        <h2>Area y diametro del circulo</h2>
+        <label for="circuloInput">
+            ingrese la media del circulo
+            <input type="number" id="circuloInput">
+        </label>
+        <br>
+        <button type="button" onclick="AreadelCirculo()">
+        Area circulo</button>
+        <button type="numer" onclick="perimetrodelCirculo()">
+        Perimetro Circulo</button>
+
+
+    </form>
+</section>
+
+  
 </body>
 </html>
