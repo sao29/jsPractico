@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.wrapper {
+    padding: 3rem;
+    text-align: center;
+    color: #333;
+ 
+    font-size: 2rem;
+
+  }
+
+a .foto{
+    width: 100%;
+    
+    
+    
+  }
+  .menu a:nth-child(1){
+ background-color: #e0e9ee;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 5px;
+    
+  }
+
+  .menu a {
+    background-color: #000000;
+    padding: 0.6rem 1.5rem;
+    border-radius: 2rem;
+    color:white;
+    text-decoration: none;
+    font-size: 3rem;
+   
+  }
+  
+  
+  .foto{
+      width: 50px;
+      height: 50px;
+  }
+
+
+  .titulo-1{
+    text-align: center;
+    margin: 40px;
+    font-size: 5rem;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10rem;
+
+  }
+  .titulo{
+    text-align: center;
+    margin: 40px;
+    font-size: 4rem;
+    
+
+  }
+
+
+
+
+
+
+  /* datos de las figuras*/
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    flex-direction: column;
+    margin: 50px;
+    gap: 5px;
+  }
+  
+  .container .elinput {
+    padding: 0.8rem 1.1rem;
+    border-radius: 5px;
+    border: solid 1px #94A3B8;
+    width: 100%;
+    margin: 20px 0 20px 0;
+   
+    
+    }
+    .label2{
+        font-size: 3rem;
+    }
+  
+    .botones{
+        display: flex;
+        justify-content: space-between;
+     }
+
+     .button:hover{
+        background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+        animation:slidebg 2s linear infinite;
+    }
+
+    .container .button{
+        padding: 0.8rem 1.1rem;
+        border-radius: 5px;
+       background-color: #000000;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 2rem;
+        
+
+        
+    }
+
+    @keyframes slidebg {
+       to {
+         background-position:20vw;
+       }
+     }
+     
+     .follow{
+       margin-top: 40px;
+     }
+     
+     .follow a{
+       color: black;
+       padding: 8px 16px;
+       text-decoration: none;
+     }
+     
+     .resultado{
+         margin-top: 2rem;
+         font-size: 3rem;
+
+     }
