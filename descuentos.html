@@ -3,33 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./descuentos.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">]
+    <link rel="stylesheet" href="./css/descuentos.css">
+    <script src="./js/descuentos.js"></script>
     <title>Porcentajes</title>
 </head>
 <body>
+
+    <nav class="wrapper">
+        <div class="menu">
+          
+        <a href="https://sao29.github.io/"><img class="foto" src="./icons/icon-512x512.png" alt="" ></a> 
+
+        <a href="./index.html">Figuras</a>
+        <a href="./descuentos.html">Descuentos</a>
+        <a href="#">Mediana </a>
+        </div>
+        </nav>
+
    <header>
-    <h1>Porcentajes y descuentos</h1>
+    <h1 class="titulo-1">Porcentajes y descuentos</h1>
 
    </header>
     
-   <section>
-       <h2>Calcular precios con descuentos</h2>
+   <section class="container">
+       <h2 class="titulo">Calcular precios con descuentos</h2>
 
-       <form action="">
-           <label for="inputPrice">Escibe el precio del producto
-               <input type="number" id="inputPrice">
+       <form  action="">
+           <label class="label2" for="inputPrice">Escibe el precio del producto
+               <input class="elinput" type="number" id="inputPrice">
                <br>
-            <label for="inputDiscount">
+            <label class="label2" for="inputDiscount">
                 Escribe el descuentos del prodocto
-                <input type="number" id="inputDiscount">
+                <input class="elinput" type="number" id="inputDiscount">
             </label>
+            <div class="botones">
+            <select class="button" name="Cupons" id="cupons">
+                <option value="0">No tengo</option>
+                <option value="10">-10%</option>
+                <option value="25">-25%</option>
+                <option value="50">-50%</option>
+                </select>
               
-               <button type="button" onclick="buttonPriceDiscount()">
+               <button class="button" type="button" onclick="buttonPriceDiscount()">
                    Calcular</button>
-        
+                </div>
 
-           <p id="ResultP"></p>
+           <p class="resultado" id="ResultP"></p>
        </form>
    </section>
 </body>
