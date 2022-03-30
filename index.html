@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/figuras.js"></script>
+
+    <link rel="icon" href="./icons/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>Figuras geometricas</title>
+</head>
+<body>
+
+    
+    <nav class="wrapper">
+        <div class="menu">
+          
+        <a href="https://sao29.github.io/"><img class="foto" src="./icons/icon-512x512.png" alt="" ></a> 
+            
+
+        <a href="#">Figuras</a>
+        <a href="#">Descuentos</a>
+        <a href="#">Mediana </a>
+        </div>
+        </nav>
+
+
+  <header class="header">
+    <h1 class="titulo-1">
+        figuras Geometricas
+    </h1>
+  </header>
+
+
+<section class="container">
+  <section class="cuadrado">
+      <h2 class="titulo">Calcula el area y perimetro de un cuadrado</h2>
+
+      <form action="">
+        <label class="label for="inputCuadrado">
+            Escribe cuanto mide cada lado de tu cuadrado:
+        </label>
+        <input class="elinput" id="inputCuadrado" type="number" />
+            <div class="botones">
+                <button type="button" class="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el perimetro
+                </button>
+        
+                <button type="button"  class="button" onclick="calcularAreaCuadrado()">
+                    Calcular el area
+                </button>
+            </div>
+     
+
+      </form>
+
+      
+</section>
+
+  <!-- Triángulo -->
+  
+  <section class="triangulo">
+    <form action="">
+        <h2 class="titulo">Obtener area y perimetro del tringualo</h2>
+      
+        <label for="inputLado1">
+            Ingrese la medida del lado 1
+            <input class="elinput" type="number" id="inputLado1">
+        </label>
+        
+        <label for="inputLado2">
+            ingrese el lado 2
+            <input class="elinput" type="number" id="inputLado2">
+        </label>
+        
+        
+        <label for="inputBase">
+            Agregue la medida de la base
+            <input class="elinput" type="number" id="inputBase"> 
+        </label>
+        
+
+        <label for="inputAltura">
+            Agruege la altura del triangulo
+            <input  class="elinput"type="number" id="inputAltura">
+        </label>
+        
+        <div class="botones">
+        <button class="button button-left" type="button" onclick="buttonAreaTriangulo()">
+        Obtener el area </button>
+        
+        <button class="button" type="button button-rigth" onclick="buttonPeriTriangulo()">
+        Obtener el perimetro</button>
+        </div>
+    </form>
+    
+
+</section>
+
+
+<section class="circulo">
+    <form action="">
+        <h2 class="titulo">Area y diametro del circulo</h2>
+        <label for="circuloInput">
+            ingrese la media del circulo
+            <input class="elinput" type="number" id="circuloInput">
+        </label>
+        
+        <div class="botones">
+        <button class="button" type="button" onclick="AreadelCirculo()">
+        Area circulo</button>
+        <button class="button" type="numer" onclick="perimetrodelCirculo()">
+        Perimetro Circulo</button>
+        </div>
+
+
+    </form>
+</section>
+</section>
+  
+</body>
+</html>
