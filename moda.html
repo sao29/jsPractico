@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda</title>
+    <link rel="icon" href="./icons/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+   
+    <link rel="stylesheet" href="./css/moda.css">
+</head>
+<body>
+    <nav class="wrapper">
+        <div class="menu">          
+        <a href="https://sao29.github.io/"><img class="foto" src="./icons/icon-512x512.png" alt="" ></a>  
+        <a href="./index.html">Figuras</a>
+        <a href="./descuentos.html">Descuentos</a>
+        <a href="#">Mediana </a>
+        </div>
+        </nav>
+
+        <header class="header">
+            <h1 class="titulo-1">
+                Media - Mediana - Moda
+            </h1>
+          </header>
+        
+   
+
+   <main class="contenedor">
+
+
+       
+
+            <section class="container">
+
+                        <div class="taller">
+                            <h2>Elija que calcular:</h2>
+                            <div class="select">
+                                <select class="btnSelect" id="formulaSelect" name="select" onchange="SelecFormula();">
+                                    <option value="1" selected>Media Aritmetica</option>
+                                    <option value="2">Media Armonica</option>
+                                    <option value="3">Media Geometrica</option>
+                                    <option value="4">Moda</option>
+                                    <option value="5">Mediana</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <form class="Datos" id="form">
+                            <div class="form-group">
+                                <label for="addValue">Agregar valor a la lista</label>
+                                <input class="elinput" type="number" id="addValue">
+                                
+                                <p class="error" id="errorAddValue"></p>
+                                <button class="btnSelect" type="button" onclick="btnAgregarNumeros();" min="0"> Agregar a la lista</button>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inputDiscount">Escribe la <strong>Posición </strong> del valor a Eliminar de la lista</label>
+                                <input class="elinput" type="number" id="removeValue">
+                                <p class="error" id="errorRemoveValue"></p>
+                                <button class="btnSelect" type="button" onclick="btnDeleteNum();"> Quitar de la lista</button>
+                            </div>
+                            <button class="btnSelect" id="btn-render" type="button" onclick="renderMediaAritmetica();"> Calcular Media Aritmetica</button>
+                            <p class="error" id="errorList"></p>
+                        </form>
+
+                    </section>
+
+                    <section class="derecha">
+                        <div class="Mostrar">
+                            <aside class="numerosAgregados">
+                                <h2>Lista de Valores cargados</h2>
+                                <ul id="list-values">
+                                </ul>
+    
+                            </aside>
+    
+                            <aside class="resultado">
+                                <h2>resultados</h2>
+                                <h2 id="resultH2"></h2>
+                                <h4 id="resultH4"></h4>
+                            </aside>
+                        </div>
+                    </section>
+                 
+                     
+
+                </main>             
+                    
+               
+           
+    
+            
+
+
+
+</body>
+<script src="./js/moda.js"></script>
+</html>
